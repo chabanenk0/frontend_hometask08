@@ -1,0 +1,17 @@
+<ul class="menu">
+    {# пример условий в twig: если переменная active равна имени конкретной опции, то для єтой опции выводится class="active"
+       Обычно эти условия пишут backend-разработчики, а frontend-еры при необходимости меняют имена классов и их стили
+    #}
+    <li>
+        <a href="#" class="{{ active == 'main' ? 'active' : '' }}">Главная</a>
+    </li>
+    <li>
+        <a href="#" class="{{ active == 'about' ? 'active' : '' }}">О Geekhub</a>
+    </li>
+    <li>
+        <a href="#" class="{{ active == 'team' ? 'active' : '' }}">Команда</a>
+    </li>
+    <li>
+        <a href="#" class="{{ active == 'contacts' ? 'active' : '' }}">Контакты</a>
+    </li>
+</ul>

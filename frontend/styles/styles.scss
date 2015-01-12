@@ -1,0 +1,277 @@
+@import "reset.scss";
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.header-wrapper {
+    width: 100%;
+    background: URL('../../frontend/images/background.png');
+}
+
+.header {
+    display: block;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    padding-left: 43px;
+    padding-top: 50px;
+    border-bottom: 1px solid #8EA8B3;
+    h1 {
+      width: 250px;
+      display: block;
+      float: left;
+      position: relative;
+      top: -20px;
+    }
+    ul.social-links {
+      display: block;
+      width: 400px;
+      height: 30px;
+      overflow: hidden;
+
+      li{
+        display: block;
+        float: left;
+      }
+      a {
+        background-color: #acbdc3;
+        background-repeat: no-repeat;
+        background-position: 6px 5px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+      }
+      a:hover {
+        background-color: #7798a6;
+      }
+      a.icon-facebook {
+        background-image: URL('../../frontend/images/facebook.png');
+      }
+      a.icon-vk {
+        background-image: URL('../../frontend/images/vk.png');
+        background-position: 1px -1px;
+      }
+      a.icon-twitter {
+        background-image: URL('../../frontend/images/twitter.png');
+        background-position: 4px 6px;
+      }
+      a.icon-youtube {
+        background-image: URL('../../frontend/images/youtube.png');
+        background-position: 4px 5px;
+      }
+      a.icon-vimeo {
+        background-image: URL('../../frontend/images/vimeo.png');
+        background-position: 4px 5px;
+      }
+    }
+    ul.menu {
+      display: block;
+      height: 30px;
+      float: right;
+      li {
+        display: block;
+        float: left;
+      }
+      a {
+        font-weight: bold;
+        font-family: "Trebuchet MS";
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #396375;
+      }
+      a:hover, a.active {
+        color: #E21D5D;
+      }
+    }
+    li {
+      margin-left: 10px;
+    }
+}
+
+.header-wrapper {
+  .register {
+    clear: both;
+    text-align: center;
+    height: 300px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background: URL('../../frontend/images/balls.png') no-repeat center 10px;
+    p {
+      font-size: 45px;
+      padding-top: 50px;
+    }
+    a {
+      background: URL('../../frontend/images/register.png') no-repeat center 0px;
+      display: block;
+      height: 300px;
+      padding-top: 30px;
+      margin-top: 50px;
+      color: white;
+      text-decoration: none;
+      font-family: "Trebuchet MS";
+      font-weight: normal;
+      font-size: 18px;
+    }
+  }
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+body {
+    background: URL('../images/fon.gif');
+}
+.wrapper {
+    display: block;
+    width: 779px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white !important;
+}
+
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.content {
+  p.about-geekhub {
+    width: 600px;
+    margin: 30px auto;
+  }
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 30px 0px 0px;
+    border-bottom: 1px solid #8EA8B3;
+    letter-spacing: 4px;
+  }
+}
+
+
+.courses {
+    margin-top: 10px;
+}
+
+.course {
+  display: block;
+  width: 350px;
+  float: left;
+  margin: 10px 20px 10px 0px;
+  img {
+    display: block;
+    float: left;
+    width: 70px;
+    height: 70px;
+    border: 3px dashed #eb2a7a;
+    border-radius: 50px;
+    padding: 15px;
+  }
+  a {
+    color: #EA2778;
+    font-size: 22px;
+    text-decoration: none;
+    margin-left: 12px;
+  }
+  p {
+    margin-left: 120px;
+    padding-top: 5px;
+  }
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.pre-footer {
+  .facebook-block {
+    float: left;
+  }
+  .certificates {
+    background: URL('../../frontend/images/certificates.png') no-repeat;
+    height: 210px;
+    width: 276px;
+    float:right;
+  }
+  .sponsors {
+    height: 210px;
+    width: 300px;
+    float: right;
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      border-bottom: 1px solid #A7C3CF;
+    }
+    ul {
+      display: inline-block;
+      text-align: center;
+      li {
+        display: inline-block;
+        text-align: center;
+        a {
+          display: block;
+          width: 90px;
+          height: 90px;
+          margin-left: auto;
+          margin-right: auto;
+          &.dim-evangelie {
+            background: URL('../../frontend/images/dim_evangelie.png') no-repeat center;
+          }
+          &.master-of-code {
+            background: URL('../../frontend/images/master_of_code.png') no-repeat center;
+          }
+          &.sergium {
+            background: URL('../../frontend/images/sergium.png') no-repeat center;
+          }
+          &.yothog {
+            background: URL('../../frontend/images/yothog.png') no-repeat center;
+          }
+          &.par {
+            background: URL('../../frontend/images/par.png') no-repeat center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  clear: both;
+  border-top: 1px solid #A7C3CF;
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0px;
+  margin-bottom: 10px;
+  .menu {
+    li {
+      display: block;
+      float: left;
+    }
+    a {
+      font-weight: bold;
+      font-family: "Trebuchet MS";
+      font-size: 10px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #396375;
+      margin-left: 20px;
+    }
+    a:hover, a.active {
+      color: #E21D5D;
+    }
+  }
+  .copyright {
+    float: right;
+  }
+
+}
